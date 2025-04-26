@@ -2,19 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Home | Klinik GPA </title>
+  <title>Beranda | Klinik GPA </title>
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="/plugins/slick/slick.css">
-  <link rel="stylesheet" href="/plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
   <!-- FancyBox -->
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
 
   <!-- Stylesheets -->
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -49,7 +49,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="">Beranda</a>
+                        <a href="index">Beranda</a>
                     </li>
                     <!-- Existing code -->
 
@@ -57,19 +57,14 @@
                         <!-- ... (unchanged) -->
                     </li>
                     <li>
-                        <a href="">Jadwal Dokter</a>
+                        <a href= "../frontend/jadwaldokter">Jadwal Dokter</a>
                     </li>
+                    <!-- Existing code -->
+
                     <li class="dropdown">
-                     <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Layanan
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Layanan
                              <span class="caret"></span>
                        </a>
-                   <ul class="dropdown-menu">
-                        <li><a href="layanan">Layanan 1</a></li>
-                        <li><a href="#">Layanan 2</a></li>
-                        <li><a href="#">Layanan 3</a></li>
-                      </ul>
-                      </li>
-  <!-- Continue with the rest of your code -->
                     <li>
                         <a href="">Tentang</a>
                     </li>
@@ -77,11 +72,6 @@
                         <a href="">Kontak</a>
                     </li>
                 </ul>
-                {{-- <ul class="nav navbar-nav ml-auto"> <!-- Added ml-auto class here -->
-                    <li class="content style text-right">
-                        <a href="#" class="btn btn-main btn-white">Login</a>
-                    </li>
-                </ul> --}}
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -121,7 +111,7 @@
                     <div class="content style text-center">
                         <h2 class="text-white">Klinik Gloria Putra Abadi<br></h2>
                         <p class="tag-text">Melayani dengan setulus hati</p>
-                        <a href="#" class="btn btn-main btn-white">jadwal Dokter</a>
+                        <a href="../frontend/jadwaldokter" class="btn btn-main btn-white">jadwal Dokter</a>
                     </div>
                     <!-- Slide Content End-->
                 </div>
@@ -136,8 +126,9 @@
                     <!-- Slide Content Start -->
                     <div class="content text-center style">
                         <h2 class="text-white text-bold mb-2">Klinik Gloria Putra Abadi</h2>
-                        <p class="tag-text mb-5">Klinik Kesehatan,
-                            <br>Apotek </p>
+                        <p class="tag-text mb-5">Klinik Kesehatan Gloria Putra Abadi merupakan
+                            Satuan usaha yang bergerak dibidang layanan kesehatan yang mencakup Klinik Pratama,
+                            Laboratorium Klinik, Apotek, fisioterapi. </p>
                         <a href="" class="btn btn-main btn-white">Tentang Kami</a>
                     </div>
                     <!-- Slide Content End -->
@@ -156,7 +147,7 @@
                 <div class="cta-block">
                     <div class="emmergency item">
                         <i class="fa fa-phone"></i>
-                        <h2>Contact</h2>
+                        <h2>Kontak Kami</h2>
                         <a href="#">0633-20808</a>
                         <a href="#">082166064614</a>
                     </div>
@@ -168,14 +159,14 @@
                         {{-- <a href="#" class="btn btn-main">Read more</a> --}}
                     </div>
                     <div class="working-time item">
-                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-hourglass-o"></i>
                         <h2>Jadwal Praktek</h2>
                         <ul class="w-hours">
-                            <li>Mon - Fri  - <span>8:00 - 17:00</span></li>
-                            <li>Mon - Fri  - <span>8:00 - 17:00</span></li>
-                            <li>Mon - Fri  - <span>8:00 - 17:00</span></li>
+                            <li>Senin - Jumat  - <span>8:00 - 17:00</span></li>
+                            <li>Sabtu  <span>8:00 - 14:00</span></li>
+                            <li>Minggu  <span> 13:00</span></li>
                         </ul>
-                        {{-- <a href="#" class="btn btn-main">Read more</a> --}}
+                        <a href="../frontend/jadwaldokter" class="btn btn-main">Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -266,6 +257,8 @@
         <div class="section-title text-center">
             <h3>Fasilitas
             </h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque <br>
+                fugiat officia corporis rerum eaque neque totam animi, sapiente culpa. Architecto!</p>
         </div>
         <div class="row items-container clearfix">
             <div class="item">
@@ -413,6 +406,7 @@
         </div>
     </div>
 </section>
+<!--End team section-->
 <!--footer-main-->
 <footer class="footer-main">
   <div class="footer-top">
@@ -469,7 +463,7 @@
             </li>
             <li>
               <a href="#">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Ultrasonografi(USG</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Ultrasonografi USG</a>
             </li>
             <li>
               <a href="#">
@@ -481,29 +475,12 @@
               </li>
               <li>
                 <a href="#">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>Konsultasi Kecantikan Wajah/a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>Suntik KB</a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>Sunat(Khitan)</a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>Rawat Rumah</a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>Laboratorium</a>
-              </li>
-          </ul>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Konsultasi Kecantikan Wajah</a>
+                </l>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="social-links">
-            <h6>Recent Posts</h6>
+            <h6>Artikel</h6>
             <ul>
               <li class="item">
                 <div class="media">
@@ -513,8 +490,8 @@
                     </a>
                   </div>
                   <div class="media-body">
-                    <h4 class="media-heading"><a href="#">Post Title</a></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
+                    <h4 class="media-heading"><a href="#">Kesehatan Itu Penting</a></h4>
+                    <p>Menjaga kesehatan dan kebugaran tubuh merupakan hal yang sangat penting. Hal ini karena dengan. </p>
                   </div>
                 </div>
               </li>
@@ -527,7 +504,7 @@
                   </div>
                   <div class="media-body">
                     <h4 class="media-heading">
-                      <a href="#">Post Title</a>
+                      <a href="#">Berita terbaru</a>
                     </h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
                   </div>
@@ -542,19 +519,19 @@
   <div class="footer-bottom">
     <div class="container clearfix">
       <div class="copyright-text">
-        <p>&copy; Copyright 2023. Klinik Gloria Putra Abadi
-          <a href="index.html">Medic</a>
+        <p>&copy; Copyright 2024. Klinik Gloria Putra Abadi
+          <a href="index.html"></a>
         </p>
       </div>
       <ul class="footer-bottom-link">
         <li>
-          <a href="index.html">Beranda</a>
+          <a href="#">Beranda</a>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a href="contact.html">Kontak</a>
+          <a href="#">Kontak</a>
         </li>
       </ul>
     </div>
@@ -571,22 +548,23 @@
   <span class="icon fa fa-angle-up"></span>
 </div>
 
-<script src="/plugins/jquery.js"></script>
-<script src="/plugins/bootstrap.min.js"></script>
-<script src="/plugins/bootstrap-select.min.js"></script>
+<script src="plugins/jquery.js"></script>
+<script src="plugins/bootstrap.min.js"></script>
+<script src="plugins/bootstrap-select.min.js"></script>
 <!-- Slick Slider -->
-<script src="/plugins/slick/slick.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
 <!-- FancyBox -->
-<script src="/plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
 <!-- Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-<script src="/plugins/google-map/gmap.js"></script>
+<script src="plugins/google-map/gmap.js"></script>
 
-<script src="/plugins/validate.js"></script>
-<script src="/plugins/wow.js"></script>
-<script src="/plugins/jquery-ui.js"></script>
-<script src="/plugins/timePicker.js"></script>
-<script src="/js/script.js"></script>
+<script src="plugins/validate.js"></script>
+<script src="plugins/wow.js"></script>
+<script src="plugins/jquery-ui.js"></script>
+<script src="plugins/timePicker.js"></script>
+<script src="js/script.js"></script>
 </body>
+
 </html>
 

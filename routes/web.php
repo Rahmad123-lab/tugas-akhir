@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,17 @@ Route::get('/', function () {
 });
 
 // Route untuk menampilkan halaman login dan menangani proses login
-Route::get('/authentikasi/login', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('/authentikasi/login', [LoginController::class, 'login']);
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);
+
+// Route untuk dashboard, pastikan Anda memiliki middleware auth jika perlu otentikasi
+Route::middleware(['auth', 'checkRole:dokter,admin,pasien,apoteker'])->group(function () {
+    Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard')-> middleware('auth');
+});
+
+// Route untuk halaman home setelah login
+Route::middleware(['auth', 'checkRole:dokter,admin,pasien,apoteker'])->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+});

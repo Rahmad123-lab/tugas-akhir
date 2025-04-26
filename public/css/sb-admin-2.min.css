@@ -156,12 +156,12 @@ sup {
     top: -0.5em;
 }
 a {
-    color: #4e73df;
+    color: #48bdc5;
     text-decoration: none;
     background-color: transparent;
 }
 a:hover {
-    color: #224abe;
+    color: #48bdc5;
     text-decoration: underline;
 }
 a:not([href]):not([class]) {
@@ -3436,7 +3436,7 @@ input[type="submit"].btn-block {
 .custom-radio
     .custom-control-input:disabled:checked
     ~ .custom-control-label::before {
-    background-color: rgba(78, 115, 223, 0.5);
+    background-color: rgba(28, 211, 224, 0.5);
 }
 .custom-switch {
     padding-left: 2.25rem;
@@ -3469,7 +3469,7 @@ input[type="submit"].btn-block {
 .custom-switch
     .custom-control-input:disabled:checked
     ~ .custom-control-label::before {
-    background-color: rgba(78, 115, 223, 0.5);
+    background-color: rgba(28, 211, 224, 0.5);
 }
 .custom-select {
     display: inline-block;
@@ -3620,7 +3620,7 @@ input[type="submit"].btn-block {
     width: 1rem;
     height: 1rem;
     margin-top: -0.25rem;
-    background-color: #4e73df;
+    background-color: #48bdc5;
     border: 0;
     border-radius: 1rem;
     -webkit-transition: background-color 0.15s ease-in-out,
@@ -3651,7 +3651,7 @@ input[type="submit"].btn-block {
 .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #4e73df;
+    background-color: #48bdc5;
     border: 0;
     border-radius: 1rem;
     -moz-transition: background-color 0.15s ease-in-out,
@@ -3685,7 +3685,7 @@ input[type="submit"].btn-block {
     margin-top: 0;
     margin-right: 0.2rem;
     margin-left: 0.2rem;
-    background-color: #4e73df;
+    background-color: #48bdc5;
     border: 0;
     border-radius: 1rem;
     -ms-transition: background-color 0.15s ease-in-out,
@@ -3804,7 +3804,7 @@ input[type="submit"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #4e73df;
+    background-color: #48bdc5;
 }
 .nav-fill .nav-item,
 .nav-fill > .nav-link {
